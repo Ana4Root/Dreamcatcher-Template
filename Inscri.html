@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <link href="Style.css" rel="stylesheet">
+    <title> Inscrição </title>
+</head>
+<body>
+    
+<style>
+    body {
+      background-image: url('night.jpg');
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      background-size: cover;
+      
+    }
+    </style>
+    <a href="Prova.html">
+        <img style="float: left;" id="imgpos"
+          src="logo.jpg"
+          width="220"
+          height="150"
+          
+        />
+    </a>   
+    <fieldset>
+        <div class=ali style="display: inline-block; " > 
+    <form class="Form">
+        <h2 style="color: white;" style="font-size: 50px;">
+            Inscrição
+        </h2>
+      
+    <label style="color: white;" > Nome: </label>
+    <input type=“text” name=“nome”> <br>
+    <label style="color: white;"> Endereço: </label>
+    <input type=“text” name=“Endereço”><br>
+    <label style="color: white;"> Telefone: </label>
+    <input type="text" name=“Telefone”><br>
+    <label style="color: white;"> Cpf: </label>
+    <input type=“text” name=“Cpf”><br>
+    <label style="color: white;"> Sexo: </label>
+    <input type="radio" value=“Masculino” name=“sexo”> Masculino <br>
+    <input type="radio" value=“Feminino” name=“sexo”> Feminino <br>
+    <label style="color: white;">Deficiente:</label> <br>
+    <input type="checkbox" name="Deficiente" value="Sim"> Sim <br>
+    <input type="checkbox" name="Deficiente" value="Não"> Não <br>
+    Se sim qual(quais):<br>
+    <textarea name=“observacoes” rows=“4” cols=“20”>
+    </textarea><br>
+
+    <label style="color: white;"> Email: </label>
+    <input type=“text” name=“email”><br>
+    <label style="color: white;"> Confirmação do Email: </label>
+    <input type=“text” name=“email”><br>
+    <input type="password" placeholder="Senha" id="password" required>
+    <input type="password" placeholder="Confirme Senha" id="confirm_password" required>
+    <button type="submit" onclick="enviado">Cadastrar</button>
+    <button type="submit" onclick="enviado" class="pure-button pure-button-primary">Confirmar</button>
+    <script>
+        function enviado(){
+     alert("Você foi cadastrado!!");  
+    }
+    </script>
+    <script>
+    var password = document.getElementById("password")
+    , confirm_password = document.getElementById("confirm_password");
+
+    function validatePassword(){
+    if(password.value != confirm_password.value) {
+        confirm_password.setCustomValidity("Senhas diferentes!");
+    } else {
+        confirm_password.setCustomValidity('');
+    }
+    }
+
+    password.onchange = validatePassword;
+    confirm_password.onkeyup = validatePassword;
+    function enviado(){
+     alert("Você foi cadastrado!!");  
+    }
+    </script> 
+    </p>
+    </form>
+    
+        </div>
+</fieldset>
+<div class="dropdown">
+    <button class="mainmenubtn">Main Menu</button>
+    <div class="dropdown-child">
+        <a href="Prova.html">Página Inicial</a>
+        <a href="Crono.html">Cronograma</a>
+        <a href="Descri.html">Saiba mais</a>
+        <a href="Inscri.html">Inscrição</a>
+    </div>
+  </div>
+</body>
+</html>

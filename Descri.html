@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<head> 
+    <meta charset="UTF-8">
+    <link href="Style.css" rel="stylesheet">
+    <title> Descrição </title>
+</head>
+<div class="CronoS">
+  
+  <a href="Prova.html">
+    <img style="float: left;" id="imgpos"
+      src="logo.jpg"
+      width="220"
+      height="150"
+      
+    />
+</a>  
+<div class="dropdown">
+  <button class="mainmenubtn">Main Menu</button>
+  <div class="dropdown-child">
+      <a href="Prova.html">Página Inicial</a>
+      <a href="Crono.html">Cronograma</a>
+      <a href="Descri.html">Saiba mais</a>
+      <a href="Inscri.html">Inscrição</a>
+  </div>
+</div> 
+</div>
+<div class="descriS">
+  
+<body style="background: linear-gradient(90deg, rgba(16,24,32,1) 0%, rgba(138,42,43,1) 35%, rgba(242,199,99,1) 100%);">
+  <p style="opacity: 0;" >
+    .
+    .
+  </p>
+ 
+    <h1 style="text-align: center; color: #000";>Sobre o evento:</h1>
+    <p style="text-align: center; font-size: 20px; margin-left: 50px; margin-right: 20px;">
+     A turnê do Dreamcatcher de sessão de autógrafos começará no dia 1º de dezembro, em Recife. 
+     A segunda parada do grupo será no Rio de Janeiro, no dia 3 de dezembro. 
+     Em seguida, as garotas seguem para a capital federal, no dia 5 de dezembro. 
+     Em São Paulo, a banda fará uma sessão de autógrafos no dia 8 de dezembro e um show, no dia seguinte, no Tropical Butantã.
+     Serão disponibilizados 400 ingressos em cada sessão de autógrafos com o grupo, no valor único de R$130. 
+     As entradas para o show em São Paulo custarão a partir de R$140, com o benefício da meia-entrada disponível para todos que fizerem uma doação de 1kg de ração para cães ou gatos. 
+     Os ingressos para todos os eventos serão vendidos a partir do dia 9 de setembro, apenas pela internet, no Sympla, e não será cobrada taxa de conveniência. 
+     Em São Paulo, além do show, estarão disponíveis ingressos para o evento de interação (high-touch) com o grupo, em que os fãs poderão cumprimentar os artistas com um toque de mãos ao final da apresentação.
+    </p>
+<div class="slideshow-container">
+    <h2 style="text-align: center;">Sobre o grupo:</h2>
+    <p style="font-size: 20px;">  
+    Dreamcatcher, anteriormente conhecido como MINX é um grupo formado pela Happy Face Entertainment em 2017. O grupo consiste em sete integrantes: JiU, SuA, Siyeon, Handong, Yoohyeon, Dami e Gahyeon. 
+    Elas estrearam oficialmente 13 de janeiro de 2017 com o extended play Nightmare.
+    </p>
+    <h3>Membros:</h3>
+    <div class="mySlides fade">
+      <div class="numbertext">1 / 7</div>
+      <img src="Jiu.jpg" style="width:100%">
+      <div class="text">Jiu(Kim Minji)</div>
+    </div>
+  
+    <div class="mySlides fade">
+      <div class="numbertext">2 / 7</div>
+      <img src="Sua.jpg" style="width:100%">
+      <div class="text">Sua(Kim Bora)</div>
+    </div>
+  
+    <div class="mySlides fade">
+      <div class="numbertext">3 / 7</div>
+      <img src="Siyeon.jpg" style="width:100%">
+      <div class="text">Siyeon(Lee Siyeon)</div>
+    </div>
+
+    <div class="mySlides fade">
+        <div class="numbertext">4 / 7</div>
+        <img src="Handong.jpg" style="width:100%">
+        <div class="text">Handong(Han Dong)</div>
+      </div>
+
+    <div class="mySlides fade">
+        <div class="numbertext">5 / 7</div>
+        <img src="Yoohyeon.jpg" style="width:100%">
+        <div class="text">Yoohyeon(Kim Yoohyeon)</div>
+    </div>
+    <div class="mySlides fade">
+        <div class="numbertext">6 / 7</div>
+        <img src="Dami.jpg" style="width:100%">
+        <div class="text">Dami(Lee Yubin)</div>
+    </div>
+    <div class="mySlides fade">
+        <div class="numbertext">7 / 7</div>
+        <img src="Gahyeon.jpg" style="width:100%">
+        <div class="text">Gahyeon(Lee Gahyeon)</div>
+    </div>   
+    
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+  </div>
+  <br>
+  
+  <div style="text-align:center">
+    <span class="dot" onclick="currentSlide(1)"></span>
+    <span class="dot" onclick="currentSlide(2)"></span>
+    <span class="dot" onclick="currentSlide(3)"></span>
+  </div>
+  <script>
+      let slideIndex = 0;
+    showSlides();
+
+    function showSlides() {
+    let i;
+    let slides = document.getElementsByClassName("mySlides");
+    for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+    }
+    slideIndex++;
+    if (slideIndex > slides.length) {slideIndex = 1}
+    slides[slideIndex-1].style.display = "block";
+    setTimeout(showSlides, 4000); 
+    }
+  </script>
+
+ <h2 style="text-align: center;">Dreamcatcher Scream:</h2>
+ <p style="text-align: center;">
+ <iframe width="642" height="361" src="https://www.youtube.com/embed/FKlGHHhTOsQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</p>
+
+</body>
+</div>
+</html>

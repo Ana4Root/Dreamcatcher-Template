@@ -1,0 +1,313 @@
+body {
+    font-family: Open Sans;
+    font-size: 18px;
+    line-height: 28px;
+  }
+  h1 {
+    letter-spacing: 2px;
+    font-family: Open Sans;
+    color: white;
+    text-align: center;
+    font-size: 100px;
+    font-weight: 800;
+    line-height: 100px;
+  }
+  .MainContainer {
+    perspective: 1px;
+    transform-style: preserve-3d;
+    height: 100vh;
+    overflow-x: hidden;
+    overflow-y: scroll;
+  }
+  .ContentContainer {
+    position: relative;
+    display: flex;
+    background-color: white;
+    z-index: 1;
+    display: flex;
+    flex: 1 0 auto;
+    position: relative;
+    z-index: -1;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    background: url(Maison.jpg);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-origin: content-box;
+    background-color: #fae4d8;
+   
+  }
+
+  .Content {
+    max-width: 750px;
+    margin: 0 auto;
+    padding: 75px 0;
+    color:white;
+    font-size: 30px;
+    font-weight: 800;
+    line-height: 70px;
+  }
+
+  p {
+    margin: 75px 0;
+  }
+  .ParallaxContainer {
+    display: flex;
+    flex: 1 0 auto;
+    position: relative;
+    z-index: -1;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    transform: translateZ(-1px) scale(2);
+    background: url(Data.jpg);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-origin: content-box;
+    background-color: #fae4d8;
+  }
+
+  .DataContainer{
+    display: flex;
+    flex: 1 0 auto;
+    position: relative;
+    z-index: -2;
+    height: 100vh;
+    justify-content: center;
+    align-items: stretch;
+    transform: translateZ(-1px) scale(2);
+    background: url(CD.jpg);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-origin: content-box;
+    background-color: #fae4d8;  
+  }
+
+  .Data{
+    position: relative;
+    max-width: 750px;
+    margin: 0 auto;
+    padding: 75px 0;
+    color:rgb(2, 248, 207);
+    height: 0px auto;
+    font-size: 30px;
+    font-weight: 800;
+  }
+
+  .botiins{
+  position: relative;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin: 0 15px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-left: 100px;
+  display: inline-block;
+  border:1px solid #25692A;
+  border-radius:4px;
+  display:inline-block;
+  cursor:pointer;
+  font-family:Verdana;
+  font-weight:bold;
+  font-size:13px;
+  padding:6px 10px;
+  text-decoration:none;
+  }
+
+  .Form{
+    margin-top:2px;
+    text-align:center;
+    border: 1px solid;
+    color: whitesmoke;
+    
+    
+  }
+
+  .CronoS{
+    background: linear-gradient(90deg, rgba(16,24,32,1) 0%, rgba(138,42,43,1) 35%, rgba(242,199,99,1) 100%);
+    background-size: 100% 100%;
+    position: absolute;
+    z-index: 5;
+    top: 0;
+    right: 100%;
+    left: 2%;
+    
+
+  }
+  .Crono{
+    background: linear-gradient(90deg, rgba(16,24,32,1) 0%, rgba(138,42,43,1) 35%, rgba(242,199,99,1) 100%);
+    background-size: 100% 100%;
+    letter-spacing: 2px;
+    font-family: Open Sans;
+    text-align: center;
+    color: white;
+    font-size: 20px;
+    font-weight: 800;
+    line-height: 30px;
+    margin-left: 20px;
+
+  }
+
+  * {box-sizing:border-box}
+
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+
+.mySlides {
+  display: none;
+}
+
+
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+  opacity: 0;
+}
+
+
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+.imgpos {
+  float: left;
+  border: transparent thin solid;
+  padding: 5px;
+  margin: 0px 10px 10px 0;
+  max-width: 186px;
+  margin-top: 0%;
+	}
+
+  .ali{
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%)
+
+  }
+  .item{
+  flex: 1;
+	margin: 5px;
+	background: linear-gradient(90deg, rgba(16,24,32,1) 0%, rgba(138,42,43,1) 35%, rgba(242,199,99,1) 100%);
+	text-align: center;
+	font-size: 1.0em;
+  }
+  .container{
+    display: flex;
+    width: 90vw;
+    justify-content: space-between;
+    margin-top: 50px
+  }
+  .column{
+  flex-direction: column;
+  justify-content: space-between;
+  }
+
+  .DescriS{
+    position: absolute;
+  }
+
+  .mainmenubtn {
+    background-color: rgb(255, 100, 22);
+    color: white;
+    border:none;
+    cursor: pointer;
+    padding:20px;
+    margin-top:20px;
+    
+    
+}
+.mainmenubtn:hover {
+  background: linear-gradient(90deg, rgba(16,24,32,1) 0%, rgba(138,42,43,1) 35%, rgba(242,199,99,1) 100%);
+	
+    }
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+.dropdown-child {
+    display: none;
+    background-color: rgb(146, 66, 32);
+    min-width: 200px;
+}
+.dropdown-child a {
+    color: rgb(197, 110, 11);
+    padding: 20px;
+    text-decoration: none;
+    display: block;
+}
+.dropdown:hover .dropdown-child {
+    display: block;
+}
+  
